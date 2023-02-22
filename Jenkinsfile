@@ -13,6 +13,7 @@ pipeline {
         stage('checkout') {
             steps {             //defines individual steps that make up a stage(can be a shell command, a script, or a plugin command)
                  dir('terraform'){
+                    bat 'rmdir /s /q tf_jenkinsProj'
                     bat 'git clone https://github.com/Nikhil-Singh25/tf_jenkinsProj.git'
                 }
             }
