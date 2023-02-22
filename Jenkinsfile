@@ -20,7 +20,7 @@ pipeline {
 
         stage('Plan') {          //terraform init => terrafrom plan and saving the plan in tfplan => tfplan.txt
             steps {
-                bat 'cd terraform 
+                bat 'cd terraform'
                 bat 'terraform init'
                 bat 'terraform plan -out tfplan'
                 bat 'terraform show -no-color tfplan > tfplan.txt'
