@@ -13,19 +13,17 @@ pipeline {
         stage('checkout') {
             steps {             //defines individual steps that make up a stage(can be a shell command, a script, or a plugin command)
                  dir('terraform'){
-                    bat '''
-                    cd terraform
-                    git clone https://github.com/Nikhil-Singh25/tf_jenkinsProj.git
-                 '''
+                    bat 'git clone https://github.com/Nikhil-Singh25/tf_jenkinsProj.git'
                 }
             }
         }
 
         stage('Plan') {          //terraform init => terrafrom plan and saving the plan in tfplan => tfplan.txt
             steps {
-                bat 'cd terraform && terraform init'
-                bat 'cd terraform && terraform plan -out tfplan'
-                bat 'cd terraform && terraform show -no-color tfplan > tfplan.txt'
+                bat 'cd terraform 
+                bat 'terraform init'
+                bat 'terraform plan -out tfplan'
+                bat 'terraform show -no-color tfplan > tfplan.txt'
             }
         }
         stage('Approval') {         
@@ -48,7 +46,8 @@ pipeline {
 
         stage('Apply') {
             steps {
-                bat 'cd terraform && terraform apply -input=false tfplan'
+                bat'cd terraform'
+                bat 'terraform apply -input=false tfplan'
             }
         }
     }
