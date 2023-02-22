@@ -14,7 +14,7 @@ pipeline {
             steps {             //defines individual steps that make up a stage(can be a shell command, a script, or a plugin command)
                  bat '''
                     cd terraform
-                    git clone https://github.com/yeshwanthlm/Terraform-Jenkins.git
+                    git clone https://github.com/Nikhil-Singh25/tf_jenkinsProj.git
                  '''
                 }
             }
