@@ -12,12 +12,14 @@ pipeline {
     stages {                   //represent logical division in the pipeline, each stage have one or more `steps`         
         stage('checkout') {
             steps {             //defines individual steps that make up a stage(can be a shell command, a script, or a plugin command)
-                 bat '''
+                 dir('terraform'){
+                    bat '''
                     cd terraform
                     git clone https://github.com/Nikhil-Singh25/tf_jenkinsProj.git
                  '''
                 }
             }
+        }
 
         stage('Plan') {          //terraform init => terrafrom plan and saving the plan in tfplan => tfplan.txt
             steps {
