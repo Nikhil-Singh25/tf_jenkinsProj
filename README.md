@@ -72,3 +72,6 @@ This repo consists of :
    3. **Build Triggers**: You can check "GitHub hook trigger for GITScm polling"
    4. **Pipeline**: SCM: Git fill out the "repository URL" and "Branch specifier" accordignly in the end for </br>**Script path** :'Jenkinsfile'</br>
    **save and apply**
+
+   ## Authors
+    This repo is created & maintained by-  [@Nikhil_Singh](https://github.com/Nikhil-Singh25)
