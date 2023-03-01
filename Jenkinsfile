@@ -49,6 +49,7 @@ pipeline {
             steps {
                 bat'cd terraform'
                 bat 'terraform apply -input=false tfplan'
+                bat 'terraform destroy -auto-approve'
             }
         }
     }
