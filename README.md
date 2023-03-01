@@ -73,5 +73,5 @@ This repo consists of :
    4. **Pipeline**: SCM: Git fill out the "repository URL" and "Branch specifier" accordignly in the end for </br>**Script path** :'Jenkinsfile'</br>
    **save and apply**
 
-   ## Authors
-    This repo is created & maintained by-  [@Nikhil_Singh](https://github.com/Nikhil-Singh25)
+## Authors
+  This repo is created & maintained by-[@Nikhil_Singh](https://github.com/Nikhil-Singh25)
