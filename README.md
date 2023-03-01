@@ -70,5 +70,5 @@ This repo consists of :
    1. Create a `pipeline` job 
    2. **General** : Select 'this project is parameterised'-> Boolean Parameter -> Name: "autoApprove -> Description: "Automatically run apply after generating plan?"
    3. **Build Triggers**: You can check "GitHub hook trigger for GITScm polling"
-   4. **Pipeline**: SCM: Git fill out the "repository URL" and "Branch specifier" accordignly in the end for ****Script path** :'Jenkinsfile'</br>
+   4. **Pipeline**: SCM: Git fill out the "repository URL" and "Branch specifier" accordignly in the end for </br>**Script path** :'Jenkinsfile'</br>
    **save and apply**
