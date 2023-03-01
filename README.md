@@ -68,6 +68,4 @@ This repo consists of :
    
    ### Configuring Jenkins server to use the github repo :
    1. Create a `pipeline` job 
-   2. **General** :
-   jhvhvl
-sasdasdas
+   2. **General** : Select 'this project is parameterised'
