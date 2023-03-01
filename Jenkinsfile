@@ -13,7 +13,7 @@ pipeline {
         stage('checkout') {
             steps {             //defines individual steps that make up a stage(can be a shell command, a script, or a plugin command)
                  dir('terraform'){
-                    bat 'rmdir /s /q tf_jenkinsProj'
+                    bat 'rmdir /s /q tf_jenkinsProj' //Removes the tf_jenkinsProj dir. everytime the job is run.
                     bat 'git clone https://github.com/Nikhil-Singh25/tf_jenkinsProj.git'
                 }
             }
